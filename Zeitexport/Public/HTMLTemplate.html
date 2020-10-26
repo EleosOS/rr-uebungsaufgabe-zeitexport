@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>TemplateEngineTest</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link rel="stylesheet" href="{{PathToAssets}}\HTMLTemplate.css">
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">Du verwendest einen <strong>veralteten</strong> browser. Bitte <strong>verwende einen neueren.</strong>.</p>
+		<![endif]-->
+		<main>
+			<img class="logo" alt="toval" src="Logo.png" height="40px"/>
+			<h1 class="wochenUeberschrift">{{wochenUeberschrift}}</h1>
+			<h2 class="wochenUeberschriftTag1BisTag2">{{wochenUeberschriftTag1BisTag5}}</h2>
+			<div class="tag">
+				<h3 class="ueberschrift">Montag</h3>
+				<h4 class="datum">{{tag1Datum}}</h4>
+				<ul class="eintragListe">
+{{tag1Liste}}
+				</ul>
+			</div>
+			<div class="tag">
+				<h3 class="ueberschrift">Dienstag</h3>
+				<h4 class="datum">{{tag2Datum}}</h4>
+				<ul class="eintragListe">
+{{tag2Liste}}
+				</ul>
+			</div>
+			<div class="tag">
+				<h3 class="ueberschrift">Mittwoch</h3>
+				<h4 class="datum">{{tag3Datum}}</h4>
+				<ul class="eintragListe">
+{{tag3Liste}}
+				</ul>
+			</div>
+			<div class="tag">
+				<h3 class="ueberschrift">Donnerstag</h3>
+				<h4 class="datum">{{tag4Datum}}</h4>
+				<ul class="eintragListe">
+{{tag4Liste}}
+				</ul>
+			</div>
+			<div class="tag">
+				<h3 class="ueberschrift">Freitag</h3>
+				<h4 class="datum">{{tag5Datum}}</h4>
+				<ul class="eintragListe">
+{{tag5Liste}}
+				</ul>
+			</div>
+		</main>
+	</body>
+	<script src="{{PathToAssets}}\HTMLTemplate.js"></script>
+</html>

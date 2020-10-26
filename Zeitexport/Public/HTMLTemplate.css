@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+	font-family: 'Varela Round', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+	margin: 5% auto;
+	width: 70%;
+}
+
+.tag > .ueberschrift {
+	margin-bottom: 0px;
+}
+
+.tag > .datum {
+	font-size: smaller;
+	margin-top: 5px;
+}
+
+/*.tag > .datum:before {
+	display: inline-block;
+	content: " ";
+	width: 15px;
+	height: 2px;
+	margin-bottom: 3.5px;
+	margin-right: 5px;
+	background-color: lightgray;
+}*/
+
+.eintrag {
+	min-width: max-content;
+	width: 50%;
+	border-bottom: 0.5px solid lightgray;
+}
+
+.notiz, .stunden {
+	cursor: copy;
+	width: max-content;
+	border-radius: 5px;
+}
+
+.stunden::before {
+	display: inline-block;
+	content: " ";
+	width: 15px;
+	height: 2px;
+	margin-bottom: 3.5px;
+	margin-right: 5px;
+	background-color: #008fcd;
+}
+
+.stunden {
+	color: #008fcd;
+}
+
+.active {
+	animation: active 1s ease-out;
+}
+
+@keyframes active {
+	from { background-color: rgba(232, 240, 128, 0.5) }
+	to { background-color: initial }
+}
+
+/*.notiz::after::active, .stunden::after::active {
+	opacity: 0;
+	content: "Kopiert!";
+	color: gray;
+	font-size: small;
+	margin-left: 10px;
+}
+
+.notiz::active, .stunden::active {
+	animation: fadeout 1s ease-in-out;
+}
+
+@keyframes fadeout {
+	from { opacity: 1 }
+	to { opacity: 0 }
+}*/
+
+@media only screen and (min-width: 1400px) {
+
+	main {
+		width: 40%;
+	}
+
+	.eintrag {
+		width: 40%;
+	}
+}
